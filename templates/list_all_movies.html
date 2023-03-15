@@ -6,6 +6,35 @@
 <h1 class="mb-5">All Movies</h1>
 <p class="mb-3">See our list of movie ratings below</p>
 <!-- TODO: Feature 1 -->
-{{ submissions }} 
+<!-- {{ submissions }} -->
+<table>
+    <tr>
+        <th>
+            Movie Name
+        </th>
+        <th>
+            Director
+        </th>
+        <th>
+            Rating
+        </th>
+    </tr>
+    {% for submission in submissions %}
+        <tr>
+            <td>
+                {{ submission.getTitle() }}
+            </td>
+            <td>
+                {{ submission.getDirector() }}
+            </td>
+            <td>
+                {{ submission.getRating() }}
+            </td>
+        </tr>
+    {% endfor %}
+</table>
+
+
+
 
 {% endblock %}

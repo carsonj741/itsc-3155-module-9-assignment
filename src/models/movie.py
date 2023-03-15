@@ -5,3 +5,14 @@ class Movie:
         self.title = title
         self.director = director
         self.rating = rating
+
+    #added getters for part 1
+    def getTitle(self) -> str:
+        return self.title
+    
+    def getDirector(self) -> str:
+        return self.director
+    
+    def getRating(self) -> str:
+        return self.rating
+    
