@@ -22,13 +22,13 @@
     {% for submission in submissions %}
         <tr>
             <td>
-                {{ submission.getTitle() }}
+                {{ submission.title }}
             </td>
             <td>
-                {{ submission.getDirector() }}
+                {{ submission.director }}
             </td>
             <td>
-                {{ submission.getRating() }}
+                {{ submission.rating }}
             </td>
         </tr>
     {% endfor %}
